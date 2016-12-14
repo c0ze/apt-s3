@@ -1,0 +1,2 @@
+#!/bin/sh
+ wget -q -O - https://s3-ap-northeast-1.amazonaws.com/deb-repo-coze/helloworld.gpg | apt-key add -
