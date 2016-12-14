@@ -10,5 +10,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: c0ze/apt-s3
+    tags: true
 before_install:
   - sudo apt-get install -y  libapt-pkg-dev cdbs
