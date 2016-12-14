@@ -1,0 +1,2 @@
+deb s3://AKIAI7GH7FEBVFJKFYRA:[fPzZMB/RiZkuk+NqOVbqtnVqOLzQc4qf7WuK2irf]@s3-ap-northeast-1.amazonaws.com/deb-repo-coze stable main
+deb s3://AKIAI7GH7FEBVFJKFYRA:[fPzZMB/RiZkuk+NqOVbqtnVqOLzQc4qf7WuK2irf]@s3-ap-northeast-1.amazonaws.com/deb-repo-coze testing main

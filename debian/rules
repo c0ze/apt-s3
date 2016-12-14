@@ -16,4 +16,4 @@ build/apt-s3::
 
 install/apt-s3::
 	@cp $(CURDIR)/src/s3 $(DEB_DIR)/usr/lib/apt/methods/
-
+	@cp $(CURDIR)/helloworld.list $(DEB_DIR)/etc/apt/sources.list.d/
