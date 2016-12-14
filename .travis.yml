@@ -1,0 +1,11 @@
+language: go
+go:
+- 1.7.3
+script: make deb && mv ../apt-s3_*.deb apt-s3_latest_amd64.deb
+deploy:
+  provider: releases
+  api_key:
+    secure: EyMt9NN0lNBfqvno4CsZz5V0UbvjyBz54u17+qYrBT5SLxDYYL4ge1VaPKh6c+NpxCqHOVglS8W062wdu3GSW7uTYBfxERzG4S1K+DNXI7R9L+tKyrgQpf55NeP950Ktu4yveD6ycaG9yVXX7gLaMPd9VgCUBbntMZHuMsLze54e/XI4wyzPI8ExB9J/6iAq9+n2x+r8nrY7/b6LhGQyBaPjtkcwmB+vQm4z1EY9uzdxX4RBZ2cTSGzqSNsKulhVYBGOQJJYX3JbvdQWnBgMDimnvqTxo6BqAymNhwAFjO7zLu1jQHhnx2z/21rt4WIkxVD+/yTSKx+eXTTozZiIuQPCE1TfziKvF7Z+q4mCXclO9iwLCXdY4WskCPLkI7x231s7LXghxZcqiIqRT5N2nKxGdmgJhgXZmPTLpiHgZ5yF6g43u3FSVpyXzTyoCzNw7qSu4I1gr45CLC5HFK7HmFxiSqEX4mD87a7Af/M2W4kBvDJA1ajEXGLxFi43Gszq3y0Bw5oU5jrnHHCY1IWPDylSh0qLGOFM/3lsPZkKLP6bwvgIXzhHAVSvBWnoy31Eg/SzHyJDLD3UEektuN4pAQ2ScsIMdLNSYYS5RtGpad0/L+Cw/AzzBOLS1W5fHlncdp+cE81Za1X+hxdlLbUWVUTT0C7u8P/cyNMhbRY2wgg=
+  file: apt-s3_latest_amd64.deb
+  on:
+    repo: c0ze/apt-s3
