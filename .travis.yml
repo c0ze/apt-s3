@@ -9,3 +9,5 @@ deploy:
   file: apt-s3_latest_amd64.deb
   on:
     repo: c0ze/apt-s3
+before_install:
+  - sudo apt-get install -y  libapt-pkg-dev cdbs
