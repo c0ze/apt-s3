@@ -1,7 +1,7 @@
 Source: apt-s3
 Section: admin
 Priority: optional
-Maintainer: Arda Karaduman@gmail.com
+Maintainer: Arda Karaduman <akaraduman@gmail.com>
 Homepage: https://github.com/c0ze/apt-s3
 Standards-Version: 3.7.3
 Build-Depends: debhelper (>= 5.0), libapt-pkg-dev (>= 0.7.23), cdbs, libcurl4-openssl-dev
