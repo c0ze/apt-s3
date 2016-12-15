@@ -12,4 +12,4 @@ deploy:
     repo: c0ze/apt-s3
     tags: true
 before_install:
-  - sudo apt-get install -y  libapt-pkg-dev cdbs
+  - sudo apt-get install -y dh-make jq cdbs libapt-pkg-dev libcurl4-openssl-dev --fix-missing
